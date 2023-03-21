@@ -9,15 +9,7 @@ function economia(principal, months, interestRate) {
     console.log(retirada)
     return (montantefinal).toFixed(2);
 }
-/*
-var principal = 360;
-var months = 10;
-var interestRate = 1;
 
-var economy = economia(principal, months, interestRate);
-
-console.log(Math.round(economy * 100) / 100); // Deve imprimir 13.98
-*/
 function calcular(){
     const valor = Number(document.getElementById('value').value);
     const parcelas = Number(document.getElementById('months').value);
