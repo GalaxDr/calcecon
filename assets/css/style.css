@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --linear-gradient: 90deg, black,blue, cyan;
+}
+* {
+    font-family: 'Poppins','sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    background: linear-gradient(var(--linear-gradient)) left bottom;
+}
+#calculator{
+    background-color: #2f2b2b;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 5px 15px rgba(0,0,0,50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+#calculator h2 {
+    font-size: 30px;
+    position: relative;
+}
+#calculator h2::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 170px;
+    background-image: linear-gradient(90deg, black,blue, cyan);
+    bottom: 5px;
+    border-radius: 2px;
+    background-size: 200% 100%;
+    animation: gradient-animation 3s alternate-reverse infinite;
+
+}
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.input-field label{
+    font-size: 15pt;
+    color: gray;
+    font-weight: 500;
+
+}
+.input-field input{
+    background: transparent;
+    border: none;
+    color: #ffff;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px solid blue;
+}
+.input-field input:focus{
+    outline: none;
+}
+#result {
+    text-align: center;
+
+}
+#total{
+    font-size: 20px;
+}
+
+#calculate {
+    border: none;
+    background: blue;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-size: 200% 100%;
+
+}
+@keyframes anim {
+    0%{
+        border-bottom: 1px solid blue;
+    }
+    100%{
+        border-bottom: 1px solid cyan;
+    }
+
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}

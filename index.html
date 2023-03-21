@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/calculator.png">
+    <script type="text/javascript" src="assets/js/main.js" defer></script>
+    <title>Economia</title>
+
+</head>
+<body>
+    <main id="container">
+        <div id="calculator">
+            <h2>
+                Caluladora de Economia
+            </h2>
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="value">Valor:</label>
+                    <input type="number" id="value" value="360">
+                </div>
+
+                <div class="input-field">
+                    <label for="fee" >Taxa de juros:</label>
+                    <input type="number" id="fee" value="1">
+                </div>
+
+                <div class="input-field">
+                    <label for="meses" >Parcelas:</label>
+                    <input type="number" id="months" value="7">
+                </div>
+            </div>
+            <div id="result">
+                <h4 >Resultado:</h4>
+                <span id="total" class="resultado">
+                   R$ 0,00 |
+                </span>
+                <span id="total2" class="vparcelas">
+                   R$ 0,00
+                </span>
+            </div>
+            <button id="calculate" onclick="calcular()">
+                Calcular
+            </button>
+        </div>
+    </main>
+</body>
+</html>
