@@ -8,7 +8,7 @@ Calcular a economia de uma compra parcelada sem juros.
 
 ## Site
 
-[Calcecon](https://economiacalc.000webhostapp.com/)
+[Calcecon](http://calcecon.galaxdr.tech/)
 
 ### Descrição
 
